@@ -1,0 +1,641 @@
+html{
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  font-size: 12px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  overflow-y: hidden;
+}
+body{
+  margin: 0px;
+  padding: 0px;
+  font-size: 12px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h1{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  /*font-family: 'Calibri Light', sans-serif;*/           
+  font-size: 26px;
+  font-weight: bold;
+  /*color:rgba(23, 196, 196, 1);*/
+  color:rgba(5, 143, 185, 1);
+  margin:0px;
+  padding:0px;
+  letter-spacing: 0.08em;
+  word-spacing: 0.2em;
+}
+h2{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin:0px;
+  padding:0px;
+  /*color:rgba(23, 196, 196, 1);*/
+  color:rgba(0, 0, 0, 1);
+}
+h3{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 17px;
+  margin:0px;
+  padding:0px;
+}
+h4{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 16px;
+  margin:0px;
+  padding:0px;
+}
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  ESTILOS DE BODY  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* -----------------------------  ESTILOS CABECERA ----------------------------------------------------------------------------------- */
+#cabecera{
+  z-index:10;
+  position:absolute;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  top:0px;
+  left:0px;
+  margin:0px;
+  padding:0px;
+  width:100%;
+  height:15%;
+  text-align:center;
+  /*background-color:rgba(216, 216, 216, 0);*/
+  background-color:rgba(255, 255, 255, 1);
+ /* border-bottom:2px solid rgba(23, 196, 196, 1);*/
+  border-bottom:0px solid rgba(10, 100, 200, 1);
+  background-repeat:no-repeat;
+  background-position:left center;
+  box-shadow: 0px 6px 30px 5px rgba(167, 167, 168, 0.2);
+}
+#cabecera h1{
+  font-family: 'Calibri Light', sans-serif;
+  font-size:34px;
+  font-weight: lighter;
+}
+
+#cabecera .datosCabecera{
+  position:absolute;
+  float:right;
+  top:0px;
+  right:15px;
+  width:20%;
+  height:auto;
+  text-align:right;
+  background-color: rgba(248, 248, 248, 0);
+  font-size: 11px;
+  border:0px solid rgba(224, 23, 50, 1);
+}
+.datosCabeceraEmpresa{
+  position:absolute;
+  float:right;
+  top:0px;
+  right:15px;
+  width:20%;
+  height:auto;
+  text-align:right;
+  background-color: rgba(248, 248, 248, 0);
+  font-size: 11px;
+  border:1px solid rgba(224, 23, 50, 1);
+}
+#cabecera .sesionCabecera{
+  position:absolute;
+  float:right;
+  top:0px;
+  right:0px;
+  padding-top:20px;
+  width:19%;
+  height:18%;
+  color:rgba(204, 204, 204, 1);
+  text-align: right;
+  margin-right: 1%;
+  background-color:rgba(248, 248, 248, 0);
+  font-size: 11px;
+  border:0px solid rgba(224, 23, 50, 1);
+}
+.btnSesion{
+  padding:0px;
+  margin:0px;
+  color: rgba(204, 204, 204, 1);
+  font-weight: bold;
+  font-size: 12px;
+  min-width: 50px;
+  max-width: 170px;
+  border: 0px solid rgba(204, 204, 204, 1);
+  background-color: rgba(248, 248, 248, 0);
+  border-bottom: 1px solid rgba(204, 204, 204, 1);
+  cursor: pointer;
+}
+/* -----------------------------  ESTILOS FOOTER ------------------------------------------------------------------------------------- */
+#footer {
+  z-index:10;
+  display:block;
+  position:absolute;
+  left:0px;
+  bottom:0px;
+  width:100%;
+  height:5.4%;
+  margin:0px;
+  padding:0px;
+  padding-top:3px;
+  margin-bottom:-3px;
+  color: rgba(10, 100, 200, 1);
+  /*border-top: 2px solid rgba(23, 196, 196, 1);*/
+  border-top: 0px solid rgba(10, 100, 200, 1);
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0px -6px 30px 5px rgba(167, 167, 168, 0.3);
+}
+.tdFooter{
+  width:20%;
+  height:26px;
+  text-align:center;
+  font-size:12px;
+  font-weight:bold;
+  padding:0px;
+  margin:0px;
+  margin-top:3px;
+  margin-bottom:0px;
+  border-left:solid 1px rgba(10, 100, 200, 1);
+  background-color: rgba(255, 255, 255, 0);
+}
+#footer button{
+  font-size:12px;
+  font-weight:bold;
+  margin-top:-4px;
+  background:none;
+  border:none;
+  cursor:pointer;
+  color:rgba(10, 100, 200, 1);
+}
+/* ESTILO CONTENEDOR  ------------------------------------------------------------------------------------------------------------------ */
+#contenedor{
+  z-index:2;
+  position: absolute;
+  display: block;
+  /*top: 15%;*/
+  margin: 0px;
+  padding:0px;
+  width:100%;
+  height:94.4%;
+  justify-content: center;
+  overflow-y: auto;
+  overflow-x: none;
+  border: 0px solid rgba(46, 40, 233, 1);
+  text-align: center;
+  background-repeat:no-repeat;
+  background-position:center center;
+  background-size:cover;
+  border-bottom:solid 0px rgba(10, 100, 200, 1);
+}
+.oscurecerContenedor{
+  z-index:1;
+  position:absolute;
+  display:flex;
+  justify-content: center;
+  width:100%;
+  height:84.2%;
+  top:15.8%;
+  margin:0px;
+  padding:0px;
+  background-color: rgba(0, 0, 0, 0.2);
+  align-items:center;
+  overflow-y:none;
+  overflow-x:none;
+  text-align:center;
+}
+#contenedor h1{
+  color:rgba(5, 143, 185, 1);
+  padding-bottom: 22px;
+}
+.ventajas{
+  display:block;
+  position:absolute;
+  top:20%;
+  left:1%;
+  width:62%;
+  height:auto;
+  margin:0px;
+  padding:14px;
+  font-family:'calibri light';
+  font-size:14px;
+  text-align:justify;
+  /*color:rgba(10, 100, 200, 1);*/
+  color:rgba(0, 0, 0, 1);
+  /*background-color:rgba(255,255,255,0.8);*/
+  background-color:rgba(255,255,255,0.4);
+  border:0px solid red;
+  box-shadow: 0px 5px 10px 8px rgba(167, 167, 168, 0.4);
+}
+.formularioRegistro{
+  z-index:2;
+  position:absolute;
+  display:block;
+  top:22%;
+  height:auto;
+  min-width:calc(26% + 1em);
+  width: fit-content;
+  padding-left:2em;
+  padding-right:2em;
+  padding-top:0px;
+  padding-bottom:14px;
+  font-family:'calibri light';
+  font-size:14px;
+  text-align:justify;
+  color:rgba(10, 100, 200, 1);
+  background-color:rgba(255,255,255,1);
+  border:1px solid rgba(10, 100, 200, 1);
+  border-radius:8px;
+  box-shadow:0px 5px 10px 5px rgba(167, 167, 168, 0.2);
+}
+.inputEstiloWEB{
+  width:100px;
+  padding-top:2px;
+  font-size:12px;
+  font-family:sans-serif;
+  background-color:rgb(255,255,255,1);
+  outline:none;
+
+}
+/*  FONDO PARA OSCURECER EL FONDO EN CUALQUIER ARCHIVO DEL SITIO WEB ----------------------------------------------------------------  */
+
+.fondoLogin{
+  z-index:1;
+  width:100%;
+  height:100%;
+  background-repeat: no-repeat;
+  background-position:center center;
+}
+.login{
+  width:100%;
+  height:auto;
+  margin-top:6%;
+  background-color:rgba(255, 255, 255, 0);
+}
+#BTN-Identificarse{
+  padding-top: 4px;
+  margin: 0px;
+  width: 200px;
+  height: 38px;
+  background-color: rgba(108, 250, 115, 1);
+  border: 1px solid rgba(113, 197, 117,1);
+  border-radius: 0px;
+  font-size: 20px;
+  font-weight: bold;
+  color:rgba(255, 255, 255, 1);
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+#BTN-Identificarse:hover{
+  background-color:rgba(255, 255, 255, 1);
+  color:rgba(113, 197, 117, 1);
+}
+.BTN-OlvidoContrasena{
+  font-size:12px;
+  font-weight: bold;
+  background:none;
+  border:none;
+  cursor:pointer;
+  color:rgba(135, 135, 135, 1);
+}
+/*  BOTON AZUL ----------------------------------------------------------------------------------------------------------------------  */
+.boton{
+  padding:0px;
+  margin:0px;
+  min-width:80px;
+  max-width:220px;
+  height:30px;
+  background-color: rgba(68, 104, 204, 1);
+  border:1px solid rgba(68, 104, 204, 1);
+  border-radius:0px;
+  font-size:14px;
+  font-weight:bold;
+  color:rgba(255, 255, 255, 1);
+  text-align:center;
+  letter-spacing:0.06em;
+}
+.boton:hover{
+  background-color:rgba(255, 255, 255, 1);
+  color: rgba(68, 104, 204, 1);
+  cursor:pointer;
+}
+/*  BOTON ROJO ----------------------------------------------------------------------------------------------------------------------  */
+.boton-2{
+  padding-top: 1px;
+  padding-left: 4px;
+  padding-right: 4px;
+  margin: 0px;
+  width: 100px;
+  height: 20px;
+  background-color: rgba(230, 62, 20, 1);
+  border: 1px solid rgba(230, 62, 20, 1);
+  border-radius: 0px;
+  font-size: 11px;
+  font-weight: bold;
+  color:rgba(255, 255, 255, 1);
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+.boton-2:hover{
+  background-color:rgba(255, 255, 255, 1);
+  color: rgba(230, 62, 20, 1);
+  cursor:pointer;
+}
+.boton-10{
+  padding:0px;
+  margin:0px;
+  width:180px;
+  height:30px;
+  background-color: rgba(68, 104, 204, 1);
+  border:1px solid rgba(68, 104, 204, 1);
+  border-radius:0px;
+  font-size:16px;
+  font-weight:bold;
+  color:rgba(255, 255, 255, 1);
+  text-align:center;
+  letter-spacing:0.06em;
+}
+.boton-10:hover{
+  background-color:rgba(255, 255, 255, 1);
+  color: rgba(68, 104, 204, 1);
+  cursor:pointer;
+}
+.clave{
+  border:1px solid rgba(5, 143, 185, 1);
+  outline:none;
+}
+.botonEnlace{
+  min-width:calc(100px + 0.5em);
+  /*max-width:calc(350px + 0.5em);*/
+  width: fit-content;
+  padding: 0.25em;
+  height:120px;
+  text-align:center;
+  font-size:18px;
+  color: rgba(10, 100, 200, 1);
+  padding-top:78px;
+  font-weight:bold;
+  background-repeat:no-repeat;
+  background-position:top center;
+  background-color:rgba(255, 255, 255, 1);
+  border:ridge 6px rgba(68, 104, 204, 1);
+  border-radius: 8px;
+  cursor:pointer;
+}
+.botonURL{
+  width:110px;
+  height:110px;
+  cursor:pointer;
+  border-radius:8px;
+  background-repeat:no-repeat;
+  background-position:center center;
+  background-color:rgba(255, 255, 255, 1);
+
+    
+    /*
+  min-width:calc(100px + 0.5em);
+  width: fit-content;
+  padding: 0.25em;
+  height:120px;
+  text-align:center;
+  font-size:18px;
+  color: rgba(10, 100, 200, 1);
+  padding-top:78px;
+  font-weight:bold;
+  background-repeat:no-repeat;
+  background-position:top center;
+  background-color:rgba(255, 255, 255, 1);
+  */
+}
+/**************ESTILOS PARA MOSTRAR AVISOS EN TODOS LOS ATRCHIVOS  *****************************/
+.mostrarAviso{
+  z-index:101;
+  display:block;
+  position:absolute;
+  width:36%;
+  height:auto;
+  top:36%;
+  text-align:center;
+  color:rgba(0, 0, 0, 0.7);
+  padding-top:0px;
+  padding-bottom:14px;
+  background-color:rgba(255, 255, 255, 1);
+  border:2px solid rgba(192, 192, 192, 1);
+  border-radius:8px;
+  font-size:14px;
+  box-shadow:5px 5px 16px rgba(167, 167, 168, 0.35);
+}
+.mostrarAviso a{
+  padding:2px;
+  padding-left:10px;
+  padding-right:10px;
+  margin:10px;
+  width:100px;
+  height:20px;
+  background-color: rgba(68, 104, 204, 1);
+  border:1px solid rgba(68, 104, 204, 1);
+  border-radius:0px;
+  font-size:16px;
+  font-weight:bold; 
+  color:rgba(255, 255, 255, 1);
+  text-align: center;
+  letter-spacing:0.06em;
+  text-decoration:none;
+}
+.mostrarAviso a:hover{
+  background-color:rgba(255, 255, 255, 1);
+  color: rgba(68, 104, 204, 1);
+  cursor:pointer;
+  text-decoration:none;
+}
+.tituloAviso{
+  padding-top:16px;
+  font-size:18px;
+  color: rgba(224, 23, 50, 1);
+  font-weight:bold;
+  text-align:center;
+}
+.mensajeAviso{
+  padding-top:12px;
+  padding-bottom:16px;
+  font-size:16px;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight:normal;
+  text-align:center;
+}
+
+
+
+/*  HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH  */
+
+/* ---- ESTILOS PARA AVISO CAMBIO DE CONTRASEÑA INICIAL ---- */
+.cambioClave{
+  z-index: 10;
+  position:absolute;
+  float: left;
+  width: 32%;
+  height: auto;
+  top: 28%;
+  left: 34%;
+  padding-bottom:10px;
+  font-size: 14px;
+  text-align: center;
+  background-color: rgba(240, 240, 240, 1);
+  border: 2px solid rgba(255, 255, 255, 1);
+  border-radius: 8px;
+  box-shadow: 5px 5px 16px rgba(167, 167, 168, 0.60);
+}
+.inputEncendido{
+  position:relative;
+  float:right;
+  margin-right:30px;
+  margin-top:-4px;
+  border: 1px solid rgba(0, 0, 0, 1);
+  border-radius: 0px;
+  width:68%;
+  outline:none;
+}
+.inputApagado{
+  position:relative;
+  float:right;
+  margin-right:30px;
+  margin-top:-4px;
+  border: 1px solid rgba(220, 220, 220, 1);
+  border-radius: 0px;
+  background-color: rgba(240, 240, 240, 0.3);
+  width:68%;
+  outline:none;
+}
+.labelEncendido{
+  display:inline-block;
+  color: rgba(0, 0, 0, 0.7);
+}
+.labelApagado{
+  display:inline-block;
+  color: rgba(220, 220, 220, 1);
+}
+/* CLASS PARA DIV MANDAR CORREO PDF */
+.enviarCorreo{
+  z-index: 2;
+  display: block;
+  position: absolute;
+  top:4%;
+  left:15%;
+  width:70%;
+  height: 380px;
+  text-align: center;
+  border-radius: 8px;
+  /*background-color: rgba(250, 250, 250, 1);*/
+  background-color: rgba(240, 240, 240, 1);
+  border: 2px solid rgba(255, 255, 255, 1);
+  background-repeat: no-repeat;
+  background-position:top left;
+  box-shadow: 4px 4px 15px rgba(167, 167, 168, 0.15);
+}
+#enviarCorreo H2{
+  padding:0px;
+  padding-top:18px;
+  padding-bottom:16px;
+  margin:0px;
+  font-size:20px;
+  text-align:center;
+  font-weight:bold;
+  color:rgba(224, 23, 50, 1);
+}
+#enviarCorreo p{
+  padding:0px;
+  padding-top:12px;
+  margin:0px;
+  margin-top:0px;
+  font-size:16px;
+  text-align:center;
+  font-weight:bold;
+  color:rgba(134, 134, 134, 1);
+}
+.imgCorreo{
+  z-index: -1;
+  position: absolute;
+  float: left;
+  left:0%;
+  width:180px;
+  border-radius:8px;
+}
+.iconoPDF {
+  margin-top:8px;
+  background-color:rgba(200, 200, 200, 0.2);
+  border: 1px solid rgba(200, 200, 200, 0.5);
+  border-radius: 6px;
+}
+.iconoPDF:hover{
+  background-color:rgba(200, 200, 200, 0.1);
+  border-radius: 6px;
+}
+/* CLASS PARA DIV MANDAR CORREO  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  */
+.enviarCorreoAutorizados{
+  z-index: 2;
+  display: block;
+  position: absolute;
+  top:18%;
+  left:20%;
+  width:60%;
+  height:auto;
+  text-align: center;
+  font-weight:normal;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 1);
+  border: 2px solid rgba(192, 192, 192, 1);
+  background-repeat: no-repeat;
+  background-position:top left;
+  box-shadow: 4px 4px 15px rgba(167, 167, 168, 0.15);
+}
+#enviarCorreoAutorizados H2{
+  padding:0px;
+  padding-top:20px;
+  padding-bottom:16px;
+  margin:0px;
+  font-size:20px;
+  text-align:center;
+  font-weight:bold;
+  color:rgba(224, 23, 50, 1);
+}
+#enviarCorreoAutorizados p{
+  padding:0px;
+  padding-top:8px;
+  margin:0px;
+  margin-top:0px;
+  font-size:16px;
+  text-align:center;
+  font-weight:bold;
+  color:rgba(134, 134, 134, 1);
+}
+.imgCorreo{
+  z-index: -1;
+  position: absolute;
+  float: left;
+  left:0%;
+  width:180px;
+  border-radius:8px;
+}
+#listaAutorizados p{
+  margin:0px;
+  padding:0px;
+  padding-top: 2px;
+  font-weight:normal;
+  font-size:14px;
+}
+/* ---- ESTILOS PARA AVISO CAMBIO DE CONTRASEÑA INICIAL ---- */
+.cambioClaveVigilante{
+  z-index:100;
+  position:absolute;
+  float: left;
+  width: 32%;
+  height: auto;
+  top: 28%;
+  left: 34%;
+  padding-bottom:10px;
+  font-size: 14px;
+  text-align: center;
+  background-color:rgba(255, 255, 255, 1);
+  border:2px solid rgba(192, 192, 192, 1);
+  border-radius: 8px;
+  box-shadow: 5px 5px 16px rgba(167, 167, 168, 0.60);
+}

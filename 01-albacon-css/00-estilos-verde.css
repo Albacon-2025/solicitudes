@@ -1,0 +1,2086 @@
+html {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  font-size: 12px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  overflow-y: hidden;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  font-size: 12px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h1{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  /*font-family: 'Calibri Light', sans-serif;*/                           
+  font-size: 34px;
+  font-weight: bold;
+  /*color:rgba(23, 196, 196, 1);*/
+  color:rgba(5, 143, 185, 1);
+  margin:0px;
+  padding:0px;
+  letter-spacing: 0.0em;
+  word-spacing: 0.3em;
+
+}
+h2{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size:24px;
+  font-weight:bold;
+  margin:0px;
+  padding:0px;
+  color:rgba(23, 196, 196, 1);
+}
+h3{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 17px;
+  margin:0px;
+  padding:0px;
+}
+h4{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 16px;
+  margin:0px;
+  padding:0px;
+}
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  ESTILOS DE BODY  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* -----------------------------  ESTILOS CABECERA ----------------------------------------------------------------------------------- */
+#cabecera{
+  z-index:10;
+  position:absolute;
+  display:block;
+  top:0px;
+  left:0px;
+  width:100%;
+  height:15%;
+  margin:0px;
+  padding:0px;
+  text-align:center;
+  background-color: rgba(255, 255, 255, 1);
+  border-bottom:2px solid rgba(10, 100, 200, 1);
+  background-repeat:no-repeat;
+  background-position:left center;
+}
+#cabecera h1{
+  font-family: 'Calibri Light', sans-serif;
+  font-size:34px;
+  font-weight: lighter;
+}
+#cabecera .datosCabecera{
+  position:absolute;
+  float:left;
+  top:0px;
+  left:18%;
+  width:18%;
+  height:auto;
+  text-align: left;
+  background-color: rgba(248, 248, 248, 0);
+  font-size: 11px;
+  border:0px solid rgba(224, 23, 50, 1);
+}
+#cabecera .datosCabeceraEmpresa{
+  position:absolute;
+  float:right;
+  top:0px;
+  right:15px;
+  width:20%;
+  height:auto;
+  text-align:right;
+  background-color: rgba(248, 248, 248, 0);
+  font-size: 11px;
+  border:1px solid rgba(224, 23, 50, 1);
+}
+#cabecera .sesionCabecera{
+  position:absolute;
+  float:right;
+  top:0px;
+  right:0px;
+  padding-top:20px;
+  width:19%;
+  height:18%;
+  color:rgba(204, 204, 204, 1);
+  text-align: right;
+  margin-right: 1%;
+  background-color:rgba(248, 248, 248, 0);
+  font-size: 11px;
+  border:0px solid rgba(224, 23, 50, 1);
+}
+.btnSesion{
+  padding:0px;
+  margin:0px;
+  color: rgba(204, 204, 204, 1);
+  font-weight: bold;
+  font-size: 12px;
+  min-width: 50px;
+  max-width: 170px;
+  border: 0px solid rgba(204, 204, 204, 1);
+  background-color: rgba(248, 248, 248, 0);
+  border-bottom: 1px solid rgba(204, 204, 204, 1);
+  cursor: pointer;
+}
+/* -----------------------------  ESTILOS FOOTER ------------------------------------------------------------------------------------- */
+#footer {
+  z-index: 3;
+  display: block;
+  position:absolute;
+  left:0px;
+  bottom:0;
+  width:100%;
+  height:4.8%;
+  margin-bottom:0px;
+  padding:0px;
+  color: rgba(10, 100, 200, 1);
+  /*border-top: 2px solid rgba(23, 196, 196, 1);*/
+  border-top: 1px solid rgba(10, 100, 200, 1);
+  /*AZUL*/
+  /*background-color:rgba(170, 220, 226, 1);*/
+  /*BLANCO*/
+  /*background-color: rgba(255, 255, 255, 1); */
+  /*NEGRO*/
+  /*background-color: rgba(0, 0, 0, 1);*/
+  /*ROJO*/
+  /*background-color: rgba(224, 24, 50, 1);*/
+  /*VERDE*/
+  background-color: rgba(100, 240, 110, 1);
+}
+.tdFooter{
+  width:20%;
+  text-align:center;
+  font-size:12px;
+  font-weight:bold;
+  margin-top:0px;
+  border-left:solid 1px rgba(10, 100, 200, 1);
+  /*AZUL*/
+  /*background-color:rgba(170, 220, 226, 1);*/
+  /*BLANCO*/
+  /*background-color: rgba(255, 255, 255, 1); */
+  /*NEGRO*/
+  /*background-color: rgba(0, 0, 0, 1);*/
+  /*ROJO*/
+  /*background-color: rgba(224, 24, 50, 1);*/
+  /*VERDE*/
+  background-color: rgba(100, 240, 110, 1);
+}
+#footer button{
+  font-size:12px;
+  font-weight:bold;
+  padding-top:-4px;
+  background:none;
+  border:none;
+  cursor:pointer;
+  color:rgba(10, 100, 200, 1);
+}
+/* ESTILO CONTENEDOR  ------------------------------------------------------------------------------------------------------------------ */
+#contenedor{
+  z-index:0;
+  position: absolute;
+  display:block;
+  /*top:15%;*/
+  margin:0px;
+  padding:0px;
+  width:100%;
+  height:100%;
+  overflow-y: auto;
+  overflow-x: none;
+  border:0px solid rgba(46, 40, 233, 1);
+  text-align:center;
+  background-repeat:no-repeat;
+  background-position:center center;
+  background-size:cover;
+  border-bottom:solid 1px rgba(10, 100, 200, 1);
+}
+.oscurecerContenedor{
+  z-index:1;
+  position:absolute;
+  display:flex;
+  justify-content: center;
+  width:100%;
+  height:100%;
+  top:0px;
+  margin:0px;
+  padding:0px;
+  background-color: rgba(0, 0, 0, 0.2);
+  align-items:center;
+  overflow-y:auto;
+  overflow-x:none;
+  text-align:center;
+}
+#contenedor h1{
+  color:rgba(5, 143, 185, 1);
+  padding-bottom: 22px;
+}
+/* ESTILOS FUNCION LOGIN  ------------------------------------------------------------------------------------------------------------------ */
+
+#BTN-Identificarse{
+  padding-top: 4px;
+  margin: 0px;
+  width:180px;
+  height:30px;
+  background-color: rgba(108, 250, 115, 1);
+  border: 1px solid rgba(113, 197, 117,1);
+  border-radius: 0px;
+  font-size: 18px;
+  font-weight: bold;
+  color:rgba(255, 255, 255, 1);
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+#BTN-Identificarse:hover{
+  background-color:rgba(255, 255, 255, 1);
+  color:rgba(113, 197, 117, 1);
+}
+.BTN-OlvidoContrasena{
+  font-size:12px;
+  font-weight: bold;
+  background:none;
+  border:none;
+  cursor:pointer;
+  color:rgba(135, 135, 135, 1);
+}
+/*  BOTON AZUL ----------------------------------------------------------------------------------------------------------------------  */
+.boton{
+  padding:0px;
+  margin:0px;
+  min-width:80px;
+  max-width:220px;
+  height:30px;
+  background-color: rgba(68, 104, 204, 1);
+  border:1px solid rgba(68, 104, 204, 1);
+  border-radius:0px;
+  font-size:14px;
+  font-weight:bold;
+  color:rgba(255, 255, 255, 1);
+  text-align:center;
+  letter-spacing:0.06em;
+}
+.boton:hover{
+  background-color:rgba(255, 255, 255, 1);
+  color: rgba(68, 104, 204, 1);
+  cursor:pointer;
+}
+/*  BOTON ROJO ----------------------------------------------------------------------------------------------------------------------  */
+.boton-2{
+  padding-top: 1px;
+  padding-left: 4px;
+  padding-right: 4px;
+  margin: 0px;
+  width: 100px;
+  height: 20px;
+  background-color: rgba(230, 62, 20, 1);
+  border: 1px solid rgba(230, 62, 20, 1);
+  border-radius: 0px;
+  font-size: 11px;
+  font-weight: bold;
+  color:rgba(255, 255, 255, 1);
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+.boton-2:hover{
+  background-color:rgba(255, 255, 255, 1);
+  color: rgba(230, 62, 20, 1);
+  cursor:pointer;
+}
+.boton-10{
+  padding:0px;
+  margin:0px;
+  width:180px;
+  height:30px;
+  background-color: rgba(68, 104, 204, 1);
+  border:1px solid rgba(68, 104, 204, 1);
+  border-radius:0px;
+  font-size:16px;
+  font-weight:bold;
+  color:rgba(255, 255, 255, 1);
+  text-align:center;
+  letter-spacing:0.06em;
+}
+.boton-10:hover{
+  background-color:rgba(255, 255, 255, 1);
+  color: rgba(68, 104, 204, 1);
+  cursor:pointer;
+}
+.clave{
+  border:1px solid rgba(5, 143, 185, 1);
+  outline:none;
+}
+/**************  ESTILOS PARA MOSTRAR AVISOS EN TODOS LOS ARCHIVOS  *****************************/
+.mostrarAviso{
+  z-index:3;
+  position:absolute;
+  display:block;
+  top:36%;
+  height:auto;
+  min-width:calc(100px + 0.5em);
+  width:fit-content;
+  padding-left:3em;
+  padding-right:3em;
+  padding-top:0px;
+  padding-bottom:14px;
+  text-align:center;
+  color:rgba(0, 0, 0, 0.7);
+  background-color:rgba(255, 255, 255, 1);
+  /*border:2px solid rgba(192, 192, 192, 1);*/
+  border:1px solid rgba(10, 100, 200, 1);
+  border-radius:8px;
+  font-size:14px;
+  /*box-shadow:5px 5px 16px rgba(167, 167, 168, 0.35);*/
+  box-shadow:5px 5px 16px rgba(100, 100, 100, 0.5);
+}
+.mostrarAviso a{
+  margin:0px;
+  padding:0px;
+  padding-left:6px;
+  padding-right:6px;
+  background-color: rgba(68, 104, 204, 1);
+  border:1px solid rgba(68, 104, 204, 1);
+  border-radius:0px;
+  font-size:15px;
+  font-weight:bold; 
+  color:rgba(255, 255, 255, 1);
+  text-align: center;
+  letter-spacing:0.06em;
+  text-decoration:none;
+}
+.mostrarAviso a:hover{
+  background-color:rgba(255, 255, 255, 1);
+  color: rgba(68, 104, 204, 1);
+  cursor:pointer;
+  text-decoration:none;
+}
+.tituloAviso{
+  padding-top:16px;
+  font-size:18px;
+  color: rgba(224, 23, 50, 1);
+  font-weight:bold;
+  text-align:center;
+}
+.mensajeAviso{
+  padding-top:12px;
+  padding-bottom:16px;
+  font-size:16px;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight:normal;
+  text-align:center;
+}
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX ESTILOS PARA ARCHIVO "EMPRESA.PHP" XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+.botonURL{
+  width:110px;
+  height:110px;
+  cursor:pointer;
+  border-radius:8px;
+  background-repeat:no-repeat;
+  background-position:center center;
+  background-color:rgba(255, 255, 255, 1);
+}
+.pantallaEmpresa{
+  z-index:0;
+  position: absolute;
+  display:block;
+  top:15%;
+  width:100%;
+  height:80.2%;
+  margin:0px;
+  padding:0px;
+  background-repeat: no-repeat;
+  background-position:center center;
+}
+.contenidoEmpresa{
+  position:relative;
+  display:block;
+  width:100%;
+  height:auto;
+  top:10%;
+  text-align:center;
+}
+.botonesEmpresa{
+  position:relative;
+  display:block;
+  width:100%;
+  height:auto;
+  top:10%;
+  text-align:center;
+}
+.cerrarSesion{
+  position:absolute;
+  display:block;
+  width:100%;
+  height:auto;
+  top:10%;
+  text-align:center;
+}
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX ESTILOS PARA ARCHIVO "CONTROL.PHP" XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+#usuarioControlOK{
+  z-index:2;
+  position:absolute;
+  display:block;
+  height:auto;
+  min-width:calc(100px + 0.5em);
+  width: fit-content;
+  padding-left:3em;
+  padding-right:3em;
+  top:28%;
+  font-size: 18px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 1);
+  border: 2px solid rgba(192, 192, 192, 1);
+  border-radius: 8px;
+  background-repeat: no-repeat;
+  background-position:top left;
+  box-shadow: 5px 5px 16px rgba(167, 167, 168, 0.60);
+}
+.fondoLoginControl{
+  z-index:0;
+  position: absolute;
+  display:block;
+  top:15%;
+  width:100%;
+  height:80.2%;
+  margin:0px;
+  padding:0px;
+  background-repeat: no-repeat;
+  background-position:center center;
+}
+.loginControl{
+  width:100%;
+  height:auto;
+  margin-top:6%;
+  background-color:rgba(255, 255, 255, 0);
+}
+/* ---- ESTILOS PARA AVISO CAMBIO DE CONTRASEÑA INICIAL ---- */
+.cambioClaveVigilante{
+  z-index:100;
+  position:absolute;
+  float: left;
+  width: 32%;
+  height: auto;
+  top: 28%;
+  left: 34%;
+  padding-bottom:10px;
+  font-size: 14px;
+  text-align: center;
+  background-color:rgba(255, 255, 255, 1);
+  border:2px solid rgba(192, 192, 192, 1);
+  border-radius: 8px;
+  box-shadow: 5px 5px 16px rgba(167, 167, 168, 0.60);
+}
+/* ----------------------------- DIV CONTENEDORA DE LOS REGISTROS A RELLENAR ----------------------------------- */
+.fichaBuscadorAcceso{
+  display:block;
+  float:left;
+  position:relative;
+  left:7%;
+  width:86%;
+  margin:0px;
+  margin-top:-4%;
+  padding:0px;
+  padding-top:0px;
+  text-align:center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size:14px;
+  background-color:rgba(255, 255, 255, 1);
+  border: 2px solid rgba(192, 192, 192, 1);
+  border-radius:8px;
+  box-shadow: 5px 5px 16px rgba(167, 167, 168, 0.35);
+}
+/* ESTILOS PANTALLA DE TRABAJO ------------------------------------------------------------------------------------------------- */
+#scanQR{
+  z-index:10;
+  position:relative;
+  float:left;
+  top:15%;
+  width:40%;
+  height:80.2%;
+  background-color: rgba(240, 240, 240, 1);
+  padding-left:27px;
+  border-right:1px solid rgba(5, 126, 25, 1);
+}
+#qr-reader{
+  z-index:100;
+  position:absolute;
+  top:50px;
+  left:-4%;
+  width:340px;
+  height:255px;
+  border:0px solid red;
+  display:inline-block;
+}
+.bandaColor{
+  position:absolute;
+  left:0%;
+  margin:0px;
+  width:100%;
+  height:4px;
+  background-color: rgba(5, 126, 25, 1);
+}
+.enviarQR{
+  z-index:100;
+  position:absolute;
+  display: block;
+  width:94%;
+  top:380px;
+  left:2%;
+  height:auto;
+  border:0px solid blue;
+}
+.datosQR{
+  position:relative;
+  float:right;
+  top:15%;
+  width:68%;
+  height:80.2%;
+  border:0px solid blue;
+  background-color: rgba(240, 240, 240, 0.5);
+  margin-left:-27px;
+}
+/*
+.mostrarResultadoQR{
+  position:absolute;
+  float:left;
+  left:3%;
+  width:95%;
+  height:100%;
+  background-color:rgba(0, 0, 0, 0.2);
+}
+*/
+/* ---- ESTILOS ERROR DE QR NO ENCONTRADO ----- */
+/*
+.mostrarAvisoErrorQR{
+  z-index:3;
+  display:block;
+  position:absolute;
+  width:60%;
+  height:auto;
+  top:36%;
+  left:20.5%;
+  background-color: rgba(240, 240, 240, 1);
+  border: 2px solid rgba(255, 255, 255, 1);
+  border-radius: 8px;
+  box-shadow: 5px 5px 16px rgba(167, 167, 168, 0.60);
+}
+*/
+/* ------- TABLAS PARA MOSTRAR RESULTADOS ------------------- */
+.mostrarResultadoQR{
+  z-index:3;
+  display:block;
+  position:absolute;
+  width:66%;
+  height:auto;
+  top:14%;
+  left:1.8%;
+  font-family:arial;
+  font-size:14px;
+  background-color: rgba(240, 240, 240, 1);
+  border: 2px solid rgba(255, 255, 255, 1);
+  background-repeat: no-repeat;
+  background-position:top left;
+  border-radius: 8px;
+  box-shadow: 5px 5px 16px rgba(167, 167, 168, 0.60);
+}
+.bloqueDatosQR{
+  display:block;
+  position: relative;
+  float:left;
+  left:1%;
+  width:97.4%;
+  padding-top:0.6%;
+  padding-left:0.4%;
+  padding-bottom:0.6%;
+  margin-top:1.5%;
+  text-align:left;
+  color: rgba(160, 160, 160, 1);
+  border: 1px solid rgba(205, 205, 205, 1);
+  border-radius: 4px;
+}
+.filaQR{
+  display:inline-block;
+  width:100%;
+  margin-top:0.4%;
+}
+.encabezadoQR{
+  display:inline-block;
+  margin:0px;
+  padding:0px;
+  padding-left:4px;
+  text-align:left;
+  font-weight:bold;
+  border: 1px solid rgba(205, 205, 205, 1);
+  border-radius:4px;
+  background-color: rgba(197, 233, 247, 1);
+}
+.datoQR{
+  display:inline-block;
+  margin:0px;
+  padding:0px;
+  padding-left:0px;
+  border: 1px solid rgba(205, 205, 205, 1);
+  border-radius:4px;
+}
+.inputDatoQR{
+  width:100%;
+  height:auto;
+  display: inline-block;
+  color: rgba(160, 160, 160, 1);
+  outline-color:rgba(187, 227, 243, 1);
+  border: 1px solid rgba(205, 205, 205, 1);
+  border-radius: 4px;
+}
+.tablaQR{
+  position:relative;
+  float:left;
+  left:1%;
+  width:98%;
+  margin-top:1.5%;
+  text-align:left;
+  color: rgba(160, 160, 160, 1);
+  border: 1px solid rgba(205, 205, 205, 1);
+  border-radius: 4px;
+}
+/*  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  */
+/*  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  ESTILOS PARA AVISOS EN ARCHIVO SOLICITUDES.PHP  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  */
+/*  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  */
+.fondoLoginSolicitudes{
+  z-index:0;
+  position: absolute;
+  display:block;
+  top:15%;
+  width:100%;
+  height:80.2%;
+  margin:0px;
+  padding:0px;
+  background-repeat: no-repeat;
+  background-position:center center;
+}
+.loginSolicitudes{
+  width:100%;
+  height:auto;
+  margin-top:6%;
+  background-color:rgba(255, 255, 255, 0);
+}
+/* ---- ESTILOS PARA AVISOS DE IDENTIFICACION SOLICITANTE ---- */
+#usuarioSolicitudesOK{
+  z-index:2;
+  position: absolute;
+  float: left;
+  width:36%;
+  height:auto;
+  top: 28%;
+  left:32%;
+  font-size: 18px;
+  text-align: center;
+  background-color: rgba(240, 240, 240, 1);
+  border: 2px solid rgba(255, 255, 255, 1);
+  border-radius: 8px;
+  background-repeat: no-repeat;
+  background-position:top left;
+  box-shadow: 5px 5px 16px rgba(167, 167, 168, 0.60);
+}
+/* ------- ESTILOS PARA FORMULARIO DE PRIMEROS DATOS -------- */
+.datosAdicionales{
+  z-index: 1;
+  position:absolute;
+  display: block;
+  top:14%;
+  left:34%;
+  margin-top:0%;
+  width:32%;
+  height:380px;
+  padding-top:15px;
+  border-radius: 8px;
+  background-color: rgba(240, 240, 240, 1);
+  background-repeat: no-repeat;
+  background-position:center center;
+  box-shadow: 0px 5px 10px 5px rgba(167, 167, 168, 0.2);
+}
+/*  HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH  */
+/*
+.mostrarAviso{
+  z-index:101;
+  display:block;
+  position:absolute;
+  width:40%;
+  height:auto;
+  top:36%;
+  left:30%;
+  text-align:center;
+  color:rgba(0, 0, 0, 0.7);
+  padding-top:0px;
+  padding-bottom:14px;
+  background-color: rgba(240, 240, 240, 1);
+  border:2px solid rgba(255, 255, 255, 1);
+  border-radius:8px;
+  font-size:14px;
+  box-shadow:5px 5px 16px rgba(167, 167, 168, 0.35);
+}
+.mostrarAviso p{
+  font-size:16px;
+  text-align:center;
+  text-decoration:none;
+  font-weight:normal;
+}
+.mostrarAviso a{
+  padding:2px;
+  padding-left:10px;
+  padding-right:10px;
+  margin:10px;
+  width:100px;
+  height:20px;
+  background-color: rgba(68, 104, 204, 1);
+  border:1px solid rgba(68, 104, 204, 1);
+  border-radius:0px;
+  font-size:16px;
+  font-weight:bold; 
+  color:rgba(255, 255, 255, 1);
+  text-align: center;
+  letter-spacing:0.06em;
+  text-decoration:none;
+}
+.mostrarAviso a:hover{
+  background-color:rgba(255, 255, 255, 1);
+  color: rgba(68, 104, 204, 1);
+  cursor:pointer;
+  text-decoration:none;
+}
+  */
+/* ---- ESTILOS PARA AVISO CAMBIO DE CONTRASEÑA INICIAL ---- */
+.cambioClave{
+  z-index: 10;
+  position:absolute;
+  float: left;
+  width: 32%;
+  height: auto;
+  top: 28%;
+  left: 34%;
+  padding-bottom:10px;
+  font-size: 14px;
+  text-align: center;
+  background-color: rgba(240, 240, 240, 1);
+  border: 2px solid rgba(255, 255, 255, 1);
+  border-radius: 8px;
+  box-shadow: 5px 5px 16px rgba(167, 167, 168, 0.60);
+}
+
+/* ESTILOS FORMULARIO DE PRIMEROS DATOS  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+.datosAdicionales{
+  z-index:0;
+  background-color: rgba(240, 240, 240, 1);
+  border: 2px solid rgba(255, 255, 255, 1);
+  box-shadow: 5px 5px 16px rgba(167, 167, 168, 0.35);   /* Sombra con un desenfoque casi disipado */
+}
+.edificioVisita{
+  font-size:12px;
+  font-family:sans-serif;
+  background-color:rgba(255,255,255,1);
+  width:200px;
+  padding-top:2px;
+  outline:none;
+}
+.inputEncendido{
+  position:relative;
+  float:right;
+  margin-right:30px;
+  margin-top:-4px;
+  border: 1px solid rgba(0, 0, 0, 1);
+  border-radius: 0px;
+  width:68%;
+  outline:none;
+}
+.inputApagado{
+  position:relative;
+  float:right;
+  margin-right:30px;
+  margin-top:-4px;
+  border: 1px solid rgba(220, 220, 220, 1);
+  border-radius: 0px;
+  background-color: rgba(240, 240, 240, 0.3);
+  width:68%;
+  outline:none;
+}
+.labelEncendido{
+  display:inline-block;
+  color: rgba(0, 0, 0, 0.7);
+}
+.labelApagado{
+  display:inline-block;
+  color: rgba(220, 220, 220, 1);
+}
+#numSolicitudes{
+  width: 24px;
+  height: 16px;
+  resize: none;
+  outline:none;
+}
+/* ESTILOS PARA MOSTRAR DATOS RESPONSABLE VISITA XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  */
+.mostrarResponsable{
+  z-index:11;
+  position:absolute;
+  width:36%;
+  top:22%;
+  left:32%;
+  padding-top:0px;
+  padding-bottom:8px;
+  background-color: rgba(240, 240, 240, 1);
+  border: 2px solid rgba(255, 255, 255, 1);
+  border-radius: 8px;
+  font-size: 14px;
+  box-shadow: 5px 5px 16px rgba(167, 167, 168, 0.35);
+}
+.mostrarResponsable p{
+  font-size:16px;
+  text-align:center;
+  font-weight:bold;
+  color:rgba(224, 23, 50, 1);
+}
+.mostrarAvisoResponsable{
+  z-index:12;
+  position:absolute;
+  width:40%;
+  top:22%;
+  left:30%;
+  padding-top:0px;
+  padding-bottom:8px;
+  background-color: rgba(240, 240, 240, 1);
+  border: 2px solid rgba(255, 255, 255, 1);
+  border-radius: 8px;
+  font-size: 14px;
+  box-shadow: 5px 5px 16px rgba(167, 167, 168, 0.35);
+  }
+.mostrarAvisoResponsable p{
+  font-size:14px;
+  text-align:center;
+  text-decoration:none;
+}
+.mostrarAvisoResponsable a{
+  padding-top: 1px;
+  padding-left: 4px;
+  padding-right: 4px;
+  margin: 0px;
+  width: 100px;
+  height: 20px;
+  background-color: rgba(68, 104, 204, 1);
+  border: 1px solid rgba(68, 104, 204, 1);
+  border-radius: 0px;
+  font-size: 11px;
+  font-weight: bold;
+  color:rgba(255, 255, 255, 1);
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-decoration:none;
+}
+/* ESTILOS PARA ENTRADA DE DATOS CON EXCEL  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  */
+#entradaExcel{
+  z-index:1;
+  display:block;
+  position: absolute;
+  top:16%;
+  left:25%;
+  width:50%;
+  height: 360px;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 14px;
+  margin: 0px;
+  padding: 0px;
+  background-color: rgba(240, 240, 240, 1);
+  border: 2px solid rgba(255, 255, 255, 1);
+  border-radius: 8px;
+  background-repeat: no-repeat;
+  background-position:top left;
+  box-shadow: 4px 4px 15px rgba(167, 167, 168, 0.15);
+}
+.entradaExcelDos{
+  margin-left:0%;
+  margin-top:0px;
+  width:100%;
+  border:solid 0px rgba(89, 0, 255, 1);
+  border-radius: 4px;
+}
+.mostrarBotonesUno{
+  display:block;
+  width:100%;
+  text-align:center;
+  margin-top:10px;
+  border:solid 1px rgba(224, 63, 130, 0);
+  border-radius: 4px;
+}
+.mostrarBotonesDos{
+  display:block;
+  width:100%;
+  text-align:center;
+  padding-top:0px;
+  border:solid 1px rgba(63, 224, 84, 0);
+  border-radius: 4px;
+}
+.clip-text{
+  width:200px;
+  height:84px;
+  margin-top:10px;
+  font-size:13px;
+  overflow-y:hidden;
+  overflow-x:hidden;
+  outline:none;
+  resize: none;
+  color:rgba(0, 0, 0, 0.2);
+  background-color: rgba(240, 240, 240, 1);
+  /*border:none;*/
+  border: 1px solid rgba(240, 240, 240, 1);
+  border-radius: 4px;
+}
+.pegadoOK{
+  display:none;
+  width:540px;
+  height:30px;
+  margin-top:-5px;
+  padding-top:5px;
+  font-size: 19px;
+  font-weight: bold;
+  color:rgba(0, 0, 0, 0.4);
+}
+#pegar{
+  display:inline-block;
+  width:200px;
+}
+#enviar, #cambiar{
+  width:200px;
+  visibility:visible;
+}
+/* ESTILOS TABLA DE ENTRADA MANUAL DE DATOS XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* DIVISION */
+#entradaManual{
+  display:block;
+  width:99%;
+  margin-left:0.4%;
+  padding: 0px;
+  float: left;
+  text-align: center;
+  top:0%;
+  left:0px;
+  background-color: rgba(255, 255, 255, 1);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 13px;
+}
+#entradaManualDatos{
+  display:block;
+  width:100%;
+  margin:0px;
+  padding-top:4px;
+  padding:0px;
+  float:left;
+  text-align:center;
+  top:0%;
+  left:0px;
+  background-color: rgba(255, 255, 255, 1);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size:13px;
+  border:1px solid rgba(218, 217, 217, 1);
+  border-radius:3px;
+}
+/* DIV ENCABEZADOS */
+#filaEncabezadosManual{
+  display:block;
+  width:100%;
+  height:35px;
+  background-color: rgba(255, 255, 255, 1);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  font-size:13px;
+  margin-top:4px;
+  margin-bottom:4px;
+}
+.manualEncabezado{
+  height:35px;
+  display:inline-block;
+  font-size:14px;
+  font-weight:bold;
+  text-align:center;
+  background-color:rgba(180, 230, 240, 0.8);
+  border:1px solid rgba(255, 255, 255, 1);
+  margin-left:4px;
+}
+.manualEncabezado p{
+  margin:0px;
+  margin-top:10px;
+}
+/* DIV DATOS */
+#filaDatosManual{
+  display:block;
+  width:100%;
+  height:22px;
+  background-color: rgba(255, 255, 255, 1);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align:center;
+  font-size:13px;
+  margin-top:3px;
+}
+.manualDato{
+  height:21px;
+  display: inline-block;
+  font-size:13px;
+  text-align:center;
+  background-color:rgba(255,255,255,1);
+  border:1px solid rgba(218,217,217,1);
+  border-radius:3px;
+  margin-left:4px;
+}
+.manualInputDato{
+  background-color:rgba(231, 152, 205,0);
+  width:98%;
+  height:20px;
+  text-align:center;
+  border: 0px solid rgba(218, 217, 217, 1);
+  outline-color: rgba(180, 230, 240, 1);
+}
+.manualDato p{
+  margin:0px;
+  margin-top:4px;
+}
+.manualInputDatoVacio{
+  background-color:rgba(231, 152, 205, 0);
+  width:98%;
+  height:20px;
+  text-align:center;
+  border: 0px solid rgba(218, 217, 217, 1);
+  outline-color: rgba(180, 230, 240, 1);
+}
+/* ESTILOS TABLA DE EDICION DE DATOS XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  */
+/* DIVISION ---------------------------------------------------------------------------------------------------------------------------  */
+.editarAccesos{
+  display:block;
+  position:relative;
+  float: left;
+  width:99%;
+  top: 25%;
+  padding: 0%;
+  padding-top: 6%;
+  margin-left: 0.4%;
+  background-color: rgba(255, 255, 255, 1);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 14px;
+  text-align: center;
+}
+/* DIV CONTENEDORA */
+#edicionAccesos{
+  display:block;
+  width:100%;
+  margin:0px;
+  padding-top:4px;
+  padding:0px;
+  float:left;
+  text-align:center;
+  top:0%;
+  left:0px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size:13px;
+  border:1px solid rgba(218, 217, 217, 1);
+  border-radius:3px;
+}
+/* DIV FILA ENCABEZADOS */
+#edicionEncabezados{
+  display:block;
+  width:100%;
+  height:35px;
+  background-color: rgba(255, 255, 255, 1);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  font-size:13px;
+  margin-top:4px;
+  margin-bottom:4px;
+}
+.editarEncabezado{
+  height:35px;
+  display:inline-block;
+  font-size:14px;
+  font-weight:bold;
+  text-align:center;
+  background-color:rgba(180, 230, 240, 0.8);
+  border:1px solid rgba(255, 255, 255, 1);
+  margin-left:4px;
+}
+.editarEncabezado p{
+  margin:0px;
+  margin-top:10px;
+}
+/* DIV FILA DATOS */
+#edicionDatos{
+  display:block;
+  width:100%;
+  height:22px;
+  background-color: rgba(255, 255, 255, 1);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align:center;
+  font-size:13px;
+  margin-top:3px;
+}
+.editarDato{
+  height:21px;
+  display: inline-block;
+  font-size:13px;
+  text-align:center;
+  background-color:rgba(255,255,255,1);
+  border:1px solid rgba(218,217,217,1);
+  border-radius:3px;
+  margin-left:4px;
+}
+.editarInputDato{
+  background-color:rgba(231, 152, 205, 0);
+  width:98%;
+  height:20px;
+  text-align:center;
+  border: 0px solid rgba(218, 217, 217, 1);
+  outline-color: rgba(180, 230, 240, 1);
+}
+/* ESTILOS TABLA DE BORRAR DATOS XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  */
+/* DIVISION -----------------------------------------------------------------------------------------------------------------------------  */
+.borrarAccesos{
+  display:block;
+  position:relative;
+  float: left;
+  top: 25%;
+  width:99%;
+  margin-left:0.4%;
+  padding: 0%;
+  padding-top: 6%;
+  background-color: rgba(255, 255, 255, 1);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 14px;
+  text-align: center;
+ }
+/* DIV CONTENEDORA */
+#borrarDatosSolicitud{
+  display:block;
+  width:100%;
+  margin:0px;
+  padding-top:4px;
+  padding:0px;
+  float:left;
+  text-align:center;
+  top:0%;
+  left:0px;
+  background-color: rgba(255, 255, 255, 1);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size:13px;
+  border:1px solid rgba(218, 217, 217, 1);
+  border-radius:3px;
+}
+/* DIV FILA ENCABEZADOS */
+#borrarEncabezadosSolicitud{
+  display:block;
+  width:100%;
+  height:35px;
+  background-color: rgba(255, 255, 255, 1);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  font-size:13px;
+  margin-top:4px;
+  margin-bottom:4px;
+}
+.borrarEncabezado{
+  height:35px;
+  display:inline-block;
+  font-size:14px;
+  font-weight:bold;
+  text-align:center;
+  background-color: rgba(235, 190, 225, 1);
+  border:1px solid rgba(255, 255, 255, 1);
+  margin-left:4px;
+}
+.borrarEncabezado p{
+  margin:0px;
+  margin-top:10px;
+}
+/* DIV FILA DATOS */
+#borrarDatos{
+  display:block;
+  width:100%;
+  height:22px;
+  background-color: rgba(255, 255, 255, 1);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align:center;
+  font-size:13px;
+  margin-top:3px;
+}
+.borrarDato{
+  height:21px;
+  display:inline-block;
+  font-size:13px;
+  text-align:center;
+  background-color:rgba(255,255,255,1);
+  border:1px solid rgba(218,217,217,1);
+  border-radius:3px;
+  margin-left:4px;
+}
+.borrarInputDato{
+  background-color:rgba(231, 152, 205, 0);
+  width:98%;
+  height:20px;
+  text-align:center;
+  border: 0px solid rgba(218, 217, 217, 1);
+  outline:none;
+}
+.borrarDato p{
+  margin:0px;
+  margin-top:4px;
+}
+/* ESTILOS DE DIVISIONES PARA TABLA DE PRESENTACION DE DATOS XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+.divMostrarAccesos{
+  display:block;
+  float:left;
+  position:relative;
+  top: 1%;
+  width:99.6%;
+  margin-left:3px;
+  text-align: center;
+  font-size: 15px;
+  border:0px solid rgba(218, 217, 217, 1);
+  overflow-y: auto;
+  overflow-x: none;
+}
+.divMostrarAccesos h1{
+  padding-top: 0%;
+  padding-bottom:0%;
+ }
+.divMostrarAccesos p{
+  left: 0px;
+  font-size:13px;
+  padding: 0%;
+}
+.bto-edicion{
+  width:90%;
+  padding:0px;
+  background-color: rgba(180, 230, 240, 0.8);
+  border: 0px solid rgba(218, 217, 217, 1);
+}
+.bto-edicion:hover {
+  background-color: rgba(112, 221, 243, 1);
+}
+#filaEncabezados{
+  font-size: 15px;
+  padding: 0%;
+  padding-bottom: 0.4%;
+  width:100%;
+  height:35px;
+  border-radius:0px;
+  text-align: center;
+}
+#filaDatos{
+  margin-bottom:4px;
+  text-align: center;
+}
+.divEncabezado{
+  height:35px;
+  display: inline-block;
+  border:1px solid rgba(218, 217, 217, 1);
+  margin-right:2px;
+  background-color:rgba(180, 230, 240, 0.8);
+  font-size:14px;
+  font-weight: bold;
+  text-align:center;
+}
+.divEncabezado p{
+  margin:0px;
+  margin-top:9px;
+}
+.divDato{
+  height:22px;
+  display: inline-block;
+  border:1px solid rgba(218, 217, 217, 1);
+  margin-right:2px;
+  background-color:rgba(255, 255, 255, 1);
+  text-align:center;
+  font-size:12px;
+}
+.divDato p{
+  margin:0px;
+  margin-top:4px;
+  font-size:12.5px;
+}
+/* CLASS PARA MARCAR LAS CELDAS CON ERRORES  */
+#tablaAccesos .sinError{
+  border: 1px solid rgba(218, 217, 217, 1);
+  font-size: 12px;
+}
+#tablaAccesos .conError{
+  border: 1px solid rgba(218, 217, 217, 1);
+  font-size: 12px;
+  background-color:rgba(250, 195, 195, 0.5);
+  color:red;
+}
+/* CLASS PARA DIV MANDAR CORREO PDF */
+.enviarCorreo{
+  z-index: 2;
+  display: block;
+  position: absolute;
+  top:4%;
+  left:15%;
+  width:70%;
+  height: 380px;
+  text-align: center;
+  border-radius: 8px;
+  /*background-color: rgba(250, 250, 250, 1);*/
+  background-color: rgba(240, 240, 240, 1);
+  border: 2px solid rgba(255, 255, 255, 1);
+  background-repeat: no-repeat;
+  background-position:top left;
+  box-shadow: 4px 4px 15px rgba(167, 167, 168, 0.15);
+}
+#enviarCorreo H2{
+  padding:0px;
+  padding-top:18px;
+  padding-bottom:16px;
+  margin:0px;
+  font-size:20px;
+  text-align:center;
+  font-weight:bold;
+  color:rgba(224, 23, 50, 1);
+}
+#enviarCorreo p{
+  padding:0px;
+  padding-top:12px;
+  margin:0px;
+  margin-top:0px;
+  font-size:16px;
+  text-align:center;
+  font-weight:bold;
+  color:rgba(134, 134, 134, 1);
+}
+.imgCorreo{
+  z-index: -1;
+  position: absolute;
+  float: left;
+  left:0%;
+  width:180px;
+  border-radius:8px;
+}
+.iconoPDF {
+  margin-top:8px;
+  background-color:rgba(200, 200, 200, 0.2);
+  border: 1px solid rgba(200, 200, 200, 0.5);
+  border-radius: 6px;
+}
+.iconoPDF:hover{
+  background-color:rgba(200, 200, 200, 0.1);
+  border-radius: 6px;
+}
+/*  XXXXXXXXXXXXXXXXXXXXXX  ESTILOS PARA EL BUSCADOR DE ACCESOS "SOLICITUDES.PHP" XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  */
+/*  ESTILOS TABLA DE ACTUALIZACION DE DATOS ----------------------------------------------------------------------------------------------------  */
+/*  DIVISION CONTENEDORA  */
+.actualizarAccesos{
+  position: absolute;
+  width: 100%;
+  display: block;
+  float: left;
+  top: 10%;
+  margin: 0%;
+  padding: 0%;
+  padding: 0.2%;
+  padding-top: 4%;
+  background-color: rgba(255, 255, 255, 0);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 14px;
+  text-align: center;
+}
+.inputEncendidoBuscador{
+  position:relative;
+  float:left;
+  margin-right:0px;
+  margin-top:0px;
+  border: 1px solid rgba(0, 0, 0, 1);
+  border-radius: 0px;
+  width:68%;
+  outline:none;
+}
+.inputApagadoBuscador{
+  position:relative;
+  float:left;
+  margin-right:0px;
+  margin-top:0px;
+  border: 1px solid rgba(220, 220, 220, 1);
+  border-radius: 0px;
+  background-color: rgba(240, 240, 240, 0.3);
+  width:68%;
+  outline:none;
+}
+/*  DIV FILA ENCABEZADOS  */
+#filaEncabezados{
+  width:100%;
+  background-color: rgba(255, 255, 255, 1);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  font-size:13px;
+  margin-top:4px;
+  height:32px;
+  border:0px solid rgba(218, 217, 217, 1);
+}
+.actualizarEncabezado{
+  height:35px;
+  display:inline-block;
+  font-size:14px;
+  font-weight:bold;
+  text-align:center;
+  background-color:rgba(180, 230, 240, 0.8);
+  border:2px solid rgba(218, 217, 217, 1);
+  margin-right:2px;
+}
+.actualizarEncabezado p{
+  margin-top:10px;
+}
+/*  DIV FILA DATOS  */
+#actualizacionDatos{
+  display:block;
+  width:100%;
+  height:22px;
+  background-color: rgba(255, 255, 255, 1);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align:center;
+  font-size:13px;
+  margin-top:3px;
+}
+.datoApagado{
+  height: 22px;
+  display: inline-block;
+  border: 2px solid rgba(218, 217, 217, 1);
+  border-radius: 4px;
+  margin-right:2px;
+  background-color: rgba(218, 217, 217, 0.3);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align:center;
+  font-size:13px;
+}
+.datoEncendido{
+  height: 22px;
+  display: inline-block;
+  margin-right: 2px;
+  background-color: rgba(255, 255, 255, 1);
+  border: 2px solid rgba(180, 230, 240, 1);
+  border-radius: 4px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  font-size: 13px;
+}
+.actualizarInput{
+  background-color:rgba(255, 255, 255, 0);
+  height:21px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align:center;
+  border: 0px solid rgba(218, 217, 217, 1);
+  outline: none;
+  margin-top:-1px;
+}
+.bto-actualizar{
+  width:18px;
+  padding:0px;
+  background-color: rgba(180, 230, 240, 0.8);
+  border: 0px solid rgba(218, 217, 217, 1);
+}
+.bto-actualizar:hover {
+  background-color: rgba(101, 217, 240, 1);
+}
+.indicacion{
+  padding-left:10px;
+  top:6px;
+  text-align:left;
+  width:99%;
+  height:22px;
+  font-size:12px;
+  color:red;
+  font-weight:bold;
+  margin-top:8px;
+
+}
+/*  ESTILOS PARA AVISO DE NO HAY COINCIDENCIAS DE ACCESO PARA EL DATO BUSCADO  */
+#sinCoincidencias{
+  z-index: 4;
+  position: absolute;
+  float: left;
+  width:36%;
+  height: auto;
+  top: 36%;
+  left:32%;
+  font-size: 18px;
+  text-align: center;
+  vertical-align: middle;
+  background-color: rgba(240, 240, 240, 1);
+  border: 2px solid rgba(255, 255, 255, 1);
+  border-radius: 8px;
+  box-shadow: 5px 5px 16px rgba(167, 167, 168, 0.60);
+}
+/*  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  */
+/*  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  ESTILOS PARA AVISOS EN ARCHIVO AUTORIZADOS.PHP  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  */
+/*  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  */
+/* ---- ESTILOS PARA AVISOS DE IDENTIFICACION GESTOR  ---- */
+#gestorOK{
+  z-index: 4;
+  position: absolute;
+  float: left;
+  width:40%;
+  height: 190px;
+  top:28%;
+  left:30%;
+  font-size: 18px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 1);
+  border: 2px solid rgba(192, 192, 192, 1);
+  border-radius: 8px;
+  background-repeat: no-repeat;
+  background-position:top left;
+  box-shadow: 5px 5px 16px rgba(167, 167, 168, 0.60);   /* Sombra con un desenfoque casi disipado */
+}
+.mostrarAvisoAutorizados{
+  z-index:101;
+  display:block;
+  position:absolute;
+  width:40%;
+  height:auto;
+  top:30%;
+  left:30%;
+  text-align:center;
+  color:rgba(0, 0, 0, 0.7);
+  padding-top:0px;
+  padding-bottom:14px;
+  background-color:rgba(255, 255, 255, 1);
+  border:2px solid rgba(192, 192, 192, 1);
+  border-radius:8px;
+  font-size:14px;
+  box-shadow:5px 5px 16px rgba(167, 167, 168, 0.35);
+}
+.mostrarAvisoAutorizados a{
+  padding:2px;
+  padding-left:10px;
+  padding-right:10px;
+  margin:10px;
+  width:100px;
+  height:20px;
+  background-color: rgba(68, 104, 204, 1);
+  border:1px solid rgba(68, 104, 204, 1);
+  border-radius:0px;
+  font-size:16px;
+  font-weight:bold; 
+  color:rgba(255, 255, 255, 1);
+  text-align: center;
+  letter-spacing:0.06em;
+  text-decoration:none;
+}
+.mostrarAvisoAutorizados a:hover{
+  background-color:rgba(255, 255, 255, 1);
+  color: rgba(68, 104, 204, 1);
+  cursor:pointer;
+  text-decoration:none;
+}
+/* ---- ESTILOS PARA AVISO CAMBIO DE CONTRASEÑA INICIAL ---- */
+.cambioClaveGestor{
+  z-index:100;
+  position:absolute;
+  float: left;
+  width: 32%;
+  height: auto;
+  top: 28%;
+  left: 34%;
+  padding-bottom:10px;
+  font-size: 14px;
+  text-align: center;
+  background-color:rgba(255, 255, 255, 1);
+  border:2px solid rgba(192, 192, 192, 1);
+  border-radius: 8px;
+  box-shadow: 5px 5px 16px rgba(167, 167, 168, 0.60);
+}
+/* ----  ESTILOS PARA FUNCION DE DATOS PREVIOS -------------------------------- */
+.formularioPrevio{
+  z-index:1;
+  position:absolute;
+  display:block;
+  width:32%;
+  height:380px;
+  top:14%;
+  left:34%;
+  padding-top:15px;
+  font-size:14px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 1);
+  border: 2px solid rgba(192, 192, 192, 1);
+  border-radius: 8px;
+  box-shadow: 5px 5px 16px rgba(167, 167, 168, 0.60);
+  background-repeat: no-repeat;
+  background-position:center center;
+}
+/* ESTILOS PARA MOSTRAR DATOS RESPONSABLE DE LA AUTORIZACION XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  */
+.mostrarResponsableAutorizacion{
+  z-index:11;
+  position:absolute;
+  width:36%;
+  top:22%;
+  left:32%;
+  padding-top:0px;
+  padding-bottom:8px;
+  background-color:rgba(255, 255, 255, 1);
+  border: 2px solid rgba(192, 192, 192, 1);
+  border-radius: 8px;
+  font-size: 14px;
+  box-shadow: 5px 5px 16px rgba(167, 167, 168, 0.35);
+}
+.mostrarResponsableAutorizacion p{
+  font-size:16px;
+  text-align:center;
+  font-weight:bold;
+  color:rgba(224, 23, 50, 1);
+}
+/* ----------------  ESTILOS PARA ENTRADA MANUAL DE REGISTROS DE AUTORIZADOS ------------------------------------ */
+/* DIVISION */
+#entradaRegistrosManual{
+  display:block;
+  width:99%;
+  margin-left:0.4%;
+  padding: 0px;
+  float: left;
+  text-align: center;
+  top:0%;
+  left:0px;
+  background-color: rgba(255, 255, 255, 1);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 14px;
+}
+/* ----------------------------- DIV CONTENEDORA DE LOS REGISTROS A RELLENAR ----------------------------------- */
+.entradaManualRegistro{
+  display:block;
+  float:left;
+  position: relative;
+  left:7%;
+  width:86%;
+  margin:0px;
+  padding:0px;
+  padding-top:0px;
+  text-align:center;
+  background-color: rgba(240, 240, 240, 0.5);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size:14px;
+  border:1px solid rgba(218, 217, 217, 1);
+  border-radius:8px;
+}
+/* DIV PARA INDICAR NUMERO DE REGISTRO */
+.numRegistro{
+  display:block;
+  width:98%;
+  margin:0px;
+  margin-top:2px;
+  padding:0px;
+  padding-left:1.2%;
+  text-align:left;
+  color: rgba(0, 0, 0, 0.4);
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0);
+  border:0px solid rgba(218, 217, 217, 1);
+}
+.numRegistro p{
+  margin:0px;
+  padding:0px;
+  font-size:16px;
+}
+/* ---------------------------------- DIV ENCABEZADOS PERSONALES Y DE CONTACTO (SALVO EL ANCHO) ------------------- */
+/* FILA DE LOS ENCABEZADOS DE LOS REGISTROS */
+.filaEncabezadoRegistro{
+  display:block;
+  width:100%;
+  background-color: rgba(255, 255, 255, 0);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  font-size:13px;
+  margin-top:2px;
+  margin-bottom:2px;
+  border:0px solid black;
+}
+.manualEncabezadoRegistro{
+  height:22px;
+  display:inline-block;
+  font-size:14px;
+  font-weight:bold;
+  text-align:center;
+  background-color:rgba(180, 230, 240, 0.8);
+  border:1px solid rgba(180, 230, 240, 1);
+  /*border:1px solid rgba(255, 255, 255, 1);*/
+  margin:0px;
+  margin-top:2px;
+  border-radius:3px;
+}
+.manualEncabezadoRegistro p{
+  margin:0px;
+  padding:0px;
+  padding-top:3px;
+  font-size:14px;
+}
+/* FILA DE DATOS DE LOS REGISTROS */
+.filaDatosRegistro{
+  display:block;
+  width:100%;
+  margin-bottom:4px;
+  background-color: rgba(255, 255, 255, 0);
+  border:0px solid pink;
+  text-align:center;
+  font-size:13px;
+  margin-top:3px;
+  }
+.manualDatoAutorizado{
+  height:21px;
+  display: inline-block;
+  font-size:13px;
+  text-align:center;
+  background-color:rgba(255,255,255,1);
+  border:1px solid rgba(218,217,217,1);
+  border-radius:3px;
+  margin-left:0px;
+}
+.manualInputDatoAutorizado{
+  background-color:rgba(231, 152, 205,0);
+  width:98.8%;
+  height:20px;
+  text-align:center;
+  border: 0px solid rgba(218, 217, 217, 1);
+  outline-color: rgba(180, 230, 240, 1);
+}
+/* ESTILOS PARA ENTRADA DE DATOS CON EXCEL AUTORIZADOS XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  */
+#autorizadosEntradaExcel{
+  z-index:2;
+  display:block;
+  position: absolute;
+  top:16%;
+  left:25%;
+  width:50%;
+  height: 360px;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 14px;
+  margin: 0px;
+  padding: 0px;
+  background-color: rgba(255, 255, 255, 1);
+  border: 2px solid rgba(192, 192, 192, 1);
+  border-radius: 8px;
+  background-repeat: no-repeat;
+  background-position:top left;
+  box-shadow: 4px 4px 15px rgba(167, 167, 168, 0.15);
+}
+.autorizadosEntradaExcelDos{
+  margin-left:0%;
+  margin-top:0px;
+  width:100%;
+  border:solid 0px rgba(89, 0, 255, 1);
+  border-radius: 4px;
+}
+.autorizadosMostrarBotonesUno{
+  display:block;
+  width:100%;
+  text-align:center;
+  margin-top:10px;
+  border:solid 1px rgba(224, 63, 130, 0);
+  border-radius: 4px;
+}
+.autorizadosMostrarBotonesDos{
+  display:block;
+  width:100%;
+  text-align:center;
+  padding-top:0px;
+  border:solid 1px rgba(63, 224, 84, 0);
+  border-radius: 4px;
+}
+.autorizados-clip-text{
+  width:200px;
+  height:84px;
+  margin-top:10px;
+  padding-right:5px;
+  font-size:13px;
+  overflow-y:hidden;
+  overflow-x:hidden;
+  outline:none;
+  resize: none;
+  color:rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(255, 255, 255, 1);
+  border-radius: 4px;
+}
+.autorizadosPegadoOK{
+  display:none;
+  width:540px;
+  height:30px;
+  margin-top:-5px;
+  padding-top:5px;
+  font-size: 19px;
+  font-weight: bold;
+  color:rgba(0, 0, 0, 0.4);
+}
+#pegar{
+  display:inline-block;
+  width:200px;
+}
+#enviar, #cambiar{
+  width:200px;
+  visibility:visible;
+}
+/* CLASS PARA DIV MANDAR CORREO  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  */
+.enviarCorreoAutorizados{
+  z-index: 2;
+  display: block;
+  position: absolute;
+  top:18%;
+  left:20%;
+  width:60%;
+  height:auto;
+  text-align: center;
+  font-weight:normal;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 1);
+  border: 2px solid rgba(192, 192, 192, 1);
+  background-repeat: no-repeat;
+  background-position:top left;
+  box-shadow: 4px 4px 15px rgba(167, 167, 168, 0.15);
+}
+#enviarCorreoAutorizados H2{
+  padding:0px;
+  padding-top:20px;
+  padding-bottom:16px;
+  margin:0px;
+  font-size:20px;
+  text-align:center;
+  font-weight:bold;
+  color:rgba(224, 23, 50, 1);
+}
+#enviarCorreoAutorizados p{
+  padding:0px;
+  padding-top:8px;
+  margin:0px;
+  margin-top:0px;
+  font-size:16px;
+  text-align:center;
+  font-weight:bold;
+  color:rgba(134, 134, 134, 1);
+}
+.imgCorreo{
+  z-index: -1;
+  position: absolute;
+  float: left;
+  left:0%;
+  width:180px;
+  border-radius:8px;
+}
+#listaAutorizados p{
+  margin:0px;
+  padding:0px;
+  padding-top: 2px;
+  font-weight:normal;
+  font-size:14px;
+}
+/*  XXXXXXXXXXXXXXXXXXXXXX  ESTILOS PARA EL BUSCADOR DE ACCESOS "AUTORIZADOS.PHP" XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  */
+/*  ESTILOS TABLA DE ACTUALIZACION DE DATOS ----------------------------------------------------------------------------------------------------  */
+/*  DIVISION CONTENEDORA  */
+.actualizarAccesos{
+  position: absolute;
+  width: 100%;
+  display: block;
+  float: left;
+  top: 10%;
+  margin: 0%;
+  padding: 0%;
+  padding: 0.2%;
+  padding-top: 4%;
+  background-color: rgba(255, 255, 255, 0);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 14px;
+  text-align: center;
+}
+.inputEncendidoBuscador{
+  position:relative;
+  float:left;
+  margin-right:0px;
+  margin-top:0px;
+  border: 1px solid rgba(0, 0, 0, 1);
+  border-radius: 0px;
+  width:68%;
+  outline:none;
+}
+.inputApagadoBuscador{
+  position:relative;
+  float:left;
+  margin-right:0px;
+  margin-top:0px;
+  border: 1px solid rgba(220, 220, 220, 1);
+  border-radius: 0px;
+  background-color: rgba(240, 240, 240, 0.3);
+  width:68%;
+  outline:none;
+}
+.mostrarListaAutoriazdos{
+  z-index:11;
+  position:absolute;
+  width:36%;
+  top:22%;
+  left:32%;
+  padding-top:0px;
+  padding-bottom:8px;
+  background-color:rgba(255, 255, 255, 1);
+  border: 2px solid rgba(192, 192, 192, 1);
+  border-radius: 8px;
+  font-size: 14px;
+  box-shadow: 5px 5px 16px rgba(167, 167, 168, 0.35);
+}
+.mostrarListaAutoriazdos p{
+  font-size:16px;
+  text-align:center;
+  font-weight:bold;
+  color:rgba(224, 23, 50, 1);
+}
+/* DIVISION */
+#entradaRegistrosManual{
+  display:block;
+  width:99%;
+  margin-left:0.4%;
+  padding: 0px;
+  float: left;
+  text-align: center;
+  top:0%;
+  left:0px;
+  background-color: rgba(255, 255, 255, 1);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 14px;
+}
+/* ----------------------------- DIV CONTENEDORA DE LOS REGISTROS A RELLENAR ----------------------------------- */
+.fichaBuscadorRegistro{
+  display:block;
+  float:left;
+  position:relative;
+  left:7%;
+  width:86%;
+  margin:0px;
+  margin-top:-4%;
+  padding:0px;
+  padding-top:0px;
+  text-align:center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size:14px;
+  background-color:rgba(255, 255, 255, 1);
+  border: 2px solid rgba(192, 192, 192, 1);
+  border-radius:8px;
+  box-shadow: 5px 5px 16px rgba(167, 167, 168, 0.35);
+}
+/* ESTILOS PARA MOSTRAR FICHA DE REGISTRO (DIV ENCABEZADOS PERSONALES Y DE CONTACTO, SALVO EL ANCHO) -------------------------------- */
+/* FILA DE LOS ENCABEZADOS DE LOS REGISTROS */
+.tituloFicha{
+  margin-top:14px;
+  margin-bottom:10px;
+  font-size:20px;
+  font-weight:bold;
+  color:rgb(153, 148, 228);
+}
+.filaEncabezadoRegistro{
+  display:block;
+  width:100%;
+  background-color: rgba(255, 255, 255, 0);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  font-size:13px;
+  margin-top:2px;
+  margin-bottom:2px;
+  border:0px solid black;
+}
+.encabezadoRegistro{
+  height:22px;
+  display:inline-block;
+  font-size:14px;
+  font-weight:bold;
+  text-align:center;
+  background-color:rgba(180, 230, 240, 0.8);
+  border:1px solid rgba(180, 230, 240, 1);
+  margin:0px;
+  margin-top:2px;
+  border-radius:3px;
+}
+.encabezadoRegistro p{
+  margin:0px;
+  padding:0px;
+  padding-top:3px;
+  font-size:14px;
+}
+/* FILA DE DATOS DE LOS REGISTROS */
+.filaRegistro{
+  display:block;
+  width:100%;
+  margin-bottom:4px;
+  background-color: rgba(255, 255, 255, 0);
+  border:0px solid pink;
+  text-align:center;
+  font-size:13px;
+  margin-top:3px;
+  }
+.registroDatoAutorizado{
+  height:21px;
+  display: inline-block;
+  font-size:13px;
+  text-align:center;
+  background-color:rgba(255,255,255,1);
+  border:1px solid rgba(218,217,217,1);
+  border-radius:3px;
+  margin-left:0px;
+}
+.registroInputDatoAutorizado{
+  background-color:rgba(231, 152, 205,0);
+  width:98.8%;
+  height:20px;
+  font-size:12px;
+  text-align:center;
+  border: 0px solid rgba(218, 217, 217, 1);
+  outline-color: rgba(180, 230, 240, 1);
+}
+.registroLabelDatoAutorizado{
+  background-color:rgba(231, 152, 205, 0);
+  width:98.8%;
+  height:20px;
+  font-size:15px ;
+  text-align:center;
+  border: 0px solid rgba(218, 217, 217, 1);
+  outline-color: rgba(180, 230, 240, 1);
+}
+.registroLabelDatoAutorizado p{
+  margin-top:0px;
+  padding:0px;
+  padding-top:1px;
+  font-size:15px ;
+}
+/* ESTILOS PARA MOSTRAR AVISO DE REGISTRO ACTUALIZADO OK  -------------------------------- */
+.registroAutorizadosOK{
+  z-index: 2;
+  display: block;
+  position: absolute;
+  top:24%;
+  left:30%;
+  width:40%;
+  height:auto;
+  text-align: center;
+  font-weight:normal;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 1);
+  border: 2px solid rgba(192, 192, 192, 1);
+  background-repeat: no-repeat;
+  background-position:top left;
+  box-shadow: 4px 4px 15px rgba(167, 167, 168, 0.15);
+}
+#registroAutorizadosOK H2{
+  padding:0px;
+  padding-top:20px;
+  padding-bottom:16px;
+  margin:0px;
+  font-size:20px;
+  text-align:center;
+  font-weight:bold;
+  color:rgba(224, 23, 50, 1);
+}
+#registroAutorizadosOK p{
+  padding:0px;
+  padding-top:8px;
+  margin:0px;
+  margin-top:0px;
+  font-size:18px;
+  text-align:center;
+  /*font-weight:bold;*/
+  color:rgba(134, 134, 134, 1);
+}
+
